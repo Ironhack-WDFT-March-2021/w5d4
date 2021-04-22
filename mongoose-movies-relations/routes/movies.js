@@ -43,9 +43,9 @@ router.get('/:id/edit', (req, res, next) => {
           selected = movie.cast.map(el => el._id).includes(actor._id) ? ' selected' : '';
           options += `<option value="${actor._id}" ${selected}>${actor.name}</option>`;
         });
-        // console.log(options);
-        // res.render('movies/edit', { movie, celebrities });
-        res.render('movies/edit', { movie, options });
+        console.log(options);
+        res.render('movies/edit', { movie, celebrities });
+        // res.render('movies/edit', { movie, options });
       })
     })
     .catch(err => {

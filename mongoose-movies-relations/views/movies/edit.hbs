@@ -10,10 +10,10 @@
   <input id="plot" type="text" name="plot" value="{{ movie.plot}}">
   
   <select name="cast" multiple>
-    {{!-- {{#each celebrities}}
+    {{#each celebrities}}
       {{{selector ../movie}}}
-    {{/each}} --}}
-    {{{ options }}}
+    {{/each}}
+    {{!-- {{{ options }}} --}}
   </select>
 
   <button type="submit">Update</button>
